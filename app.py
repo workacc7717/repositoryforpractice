@@ -1,10 +1,11 @@
-from flask import Flask
+import os
 
-app = Flask("__alok__")
+workspace = os.getcwd()
 
-@app.route('/')
-def home():
-    return "hello from cloud pass!"
+print("Jenkins Workspace Path:", workspace)
+print("Files in Jenkins Workspace:")
 
-if __name__ == "__main__":
-    app.run()
+for file in os.listdir(workspace):
+    print(file)
+
+print("Git clone successful – files are present in workspace")
