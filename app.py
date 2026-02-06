@@ -1,11 +1,4 @@
-import os
+a=5
+b=8
 
-workspace = os.getcwd()
-
-print("Jenkins Workspace Path:", workspace)
-print("Files in Jenkins Workspace:")
-
-for file in os.listdir(workspace):
-    print(file)
-
-print("Git clone successful – files are present in workspace")
+print("the sum of both a+b is :-",a+b)
